@@ -1,0 +1,109 @@
+.container {
+  width: 100%;
+  padding: 15px;
+  box-sizing: border-box; /* Ensure padding is included in the width */
+  background-color: palevioletred; /* Added background color */
+}
+
+header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+h1 {
+  font-size: 30px; /* Increase font size */
+  color: #2d0df7; /* Change text color */
+  font-weight: bolder;
+  text-decoration: underline;
+  text-decoration-color: indigo;
+}
+
+p {
+  font-size: 22px; /* Change font size */
+  color: brown; /* Change text color */
+  line-height: 1.6;
+  font-weight: bold;
+}
+
+.features {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.feature {
+  width: calc(50% - 10px);
+  margin-bottom: 20px;
+  padding: 20px;
+  box-sizing: border-box;
+  background-color: #baeb08;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(254, 37, 4, 0.1);
+}
+
+.feature h2 {
+  margin-top: 0;
+  color: #ef098b;
+}
+
+.feature p {
+  color: red; /* Change color to red */
+}
+
+.button-container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.button {
+ 
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+#learnMoreBtn {
+  background-color: #ffbb00;
+  color: #7e10f5;
+  text-decoration: none;
+  margin-right: 10px; /* Add margin to separate buttons */
+  font-weight: bolder;
+
+  
+}
+
+#accountBtn {
+  background-color: #007bff;
+  color: #0aee15;
+  text-decoration: none;
+  margin-left: 10px; /* Add margin to separate buttons */
+  font-weight: bolder;
+}
+
+.button i {
+  margin-right: 5px;
+}
+
+.footer {
+  margin-top: 20px;
+  text-align: center;
+  color: #999999;
+  font-size: 14px;
+}
+
+.social-icons {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.social-icons a {
+  margin: 0 10px;
+  color: orangered;
+  font-size: 24px;
+}
+
+.social-icons a:hover {
+  color: #0dbde0;
+}

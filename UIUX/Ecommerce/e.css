@@ -1,0 +1,329 @@
+/* Reset CSS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Global Styles */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #0fbcf6;
+  color: yellow;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Header Styles */
+header {
+  background-color: #c93eb9;
+  padding: 20px 0;
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  color: #15e0be;
+  font-size: 24px;
+  font-weight: bold;
+  font-style: italic;
+  
+}
+
+nav ul {
+  list-style-type: none;
+}
+
+nav ul li {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+nav ul li a {
+  color: #18d707;
+  text-decoration: none;
+  font-size: 18px;
+  transition: color 0.3s ease;
+  font-weight: bolder;
+}
+
+nav ul li a:hover {
+  color: #ffc107;
+}
+
+/* Dropdown Styles */
+.dropdown {
+  position: relative;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #dd11ef;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  min-width: 160px;
+}
+
+.dropdown-content a {
+  color: #333;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: #f9f9f9;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Caret Styles */
+.caret {
+  margin-left: 5px;
+  vertical-align: middle;
+  border-top: 4px solid;
+  border-right: 4px solid transparent;
+  border-left: 4px solid transparent;
+}
+
+/* Product Cards */
+.products {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  grid-gap: 20px;
+}
+
+.product-card {
+  background-color: #dd1054;
+  border: 1px solid #e1e1e1;
+  border-radius: 5px;
+  padding: 20px;
+  text-align: center;
+  transition: box-shadow 0.3s ease;
+}
+
+.product-card:hover {
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.product-card img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 15px;
+}
+
+.product-card h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.product-card p {
+  color: #888;
+  margin-bottom: 15px;
+}
+
+.product-card button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 8px 15px;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.product-card button:hover {
+  background-color: #0056b3;
+}
+
+/* Message Styles */
+.message {
+  margin-top: 20px;
+  padding: 10px 20px;
+  border-radius: 5px;
+  display: none;
+}
+
+.message.success {
+  background-color: #28a745;
+}
+
+.message.error {
+  background-color: #dc3545;
+}
+
+/* Footer Styles */
+footer {
+  background-color: #343a40;
+  color: #fff;
+  text-align: center;
+  padding: 20px 0;
+}
+/* Add to Cart and Add to Wishlist button container */
+.button-container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.product-card button {
+  width: calc(50% - 5px); /* Adjust width to fit both buttons side by side with spacing */
+}
+
+.product-card button:nth-child(2) {
+  margin-left: 10px; /* Add margin between buttons */
+}
+/* Add your CSS styles here */
+
+.search-box-container {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.search-box-container input[type="text"] {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px 0 0 5px;
+  width: 300px; /* Adjust width as needed */
+}
+
+.search-box-container button {
+  padding: 10px;
+  border: none;
+  background-color: #ccc;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+}
+
+.search-box-container button img {
+  width: 20px; /* Adjust size of the magnifying glass icon */
+  height: 20px; /* Adjust size of the magnifying glass icon */
+}
+
+.message {
+  display: none;
+  padding: 10px;
+  margin-top: 10px;
+  border-radius: 5px;
+  background-color: #f2dede;
+  color: #a94442;
+}
+
+.magnifying-glass-icon {
+  width: 20px; /* Adjust size of the magnifying glass icon */
+  height: 20px; /* Adjust size of the magnifying glass icon */
+}
+/* Custom styles for sign-in buttons */
+.google-sign-in {
+  background-color: #DB4437; /* Google red */
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+.email-sign-in {
+  background-color: #4285F4; /* Google blue */
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+.phone-sign-in {
+  background-color: #34A853; /* Google green */
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+}
+/* Custom styles for sign-in buttons */
+.google-sign-in, .email-sign-in, .phone-sign-in {
+  display: inline-block;
+  background-color: #e85506; /* Google blue */
+  color: purple;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+/* Style for the icon */
+.icon {
+  margin-right: 5px;
+}
+/* The Modal (background) */
+.modal {
+  display: none;
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 10% auto; /* 10% from the top and centered */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 50%; /* Adjust width as needed */
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+/* Close Button */
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.logo {
+  display: flex;
+  align-items: center; /* Align the logo and text vertically */
+}
+
+.logo img {
+  width: 40px; /* Adjust the width of the logo as needed */
+  height: auto; /* Maintain aspect ratio */
+  margin-right: 10px; /* Add some spacing between the logo and text */
+}
+

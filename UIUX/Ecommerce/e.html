@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ecommerce Website</title>
+  <link rel="stylesheet" href="e.css">
+</head>
+<body>
+  <header>
+    <div class="header-container">
+      <h1 class="logo"><img src="C:\\Users\\Sakshi\\OneDrive\\Desktop\\UIUX\\Ecommerce\\images\\logo.jpg" alt="Style Hive Logo">Style Hive</h1>
+      <nav>
+        <ul>
+          <li><a href="#" id="allProducts">All Products</a></li>
+          <li><a href="#" id="electronics">Electronics</a></li>
+          <li class="dropdown">
+            <a href="#" id="clothing">Clothing <span class="caret"></span></a>
+            <div class="dropdown-content">
+              <a href="#" id="menClothing">Men's Clothing</a>
+              <a href="#" id="womenClothing">Women's Clothing</a>
+              <a href="#" id="kidsClothing">Kids' Clothing</a>
+            </div>
+          </li>
+          <li><a href="#" id="cosmetics">Cosmetics</a></li>
+          <li><a href="#" id="wishlist">Wishlist</a></li>
+          <li><a href="#" id="cart">Cart</a></li>
+        </ul>
+      </nav>
+      
+    </div>
+  </header>
+
+  
+<!-- Search box -->
+<div class="search-box-container">
+  <input type="text" id="searchInput" placeholder="Search products...">
+  <button onclick="searchProducts()"><img src="C:\\Users\\Sakshi\\OneDrive\\Desktop\\UIUX\\Ecommerce\\images\\search.jpg" alt="Search" class="magnifying-glass-icon"></button>
+</div>
+
+  <div class="container">
+    <div class="products" id="products">
+      <!-- Product cards will be dynamically added here -->
+    </div>
+    <!-- Modal -->
+<div id="myModal" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeModal()">&times;</span>
+    <p id="errorMessage" class="error-message"></p>
+  </div>
+</div>
+
+
+
+    <div id="message" class="message"></div>
+
+    <!-- Payment form -->
+    <div class="payment-form" id="paymentForm">
+      <h3>Payment Information</h3>
+      <form id="paymentForm">
+        <label for="cardNumber">Card Number:</label>
+        <input type="text" id="cardNumber" name="cardNumber" required>
+        <!-- Add more fields for expiration date, CVV, etc. -->
+        <button type="submit">Pay Now</button>
+      </form>
+    </div>
+  </div>
+  
+<!-- Sign-in options -->
+<div class="sign-in-options">
+  <button class="google-sign-in" onclick="signInWithGoogle()"><span class="icon">🔑</span> Sign in with Google</button>
+  <button class="email-sign-in" onclick="signInWithEmail()"><span class="icon">✉️</span> Sign in with Email</button>
+  <button class="phone-sign-in" onclick="signInWithPhone()"><span class="icon">📱</span> Sign in with Phone Number</button>
+</div>
+
+
+
+  <footer>
+    <p>&copy; 2024 Ecommerce Website. All rights reserved.</p>
+  </footer>
+
+  <script src="e.js"></script>
+</body>
+</html>
